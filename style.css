@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+    
+}
+a:link, a:visited, a:focus, a:active{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    color: blue;
+}
+
+body {
+    font-family: "roboto";
+    font-weight: 300;
+}
+
+/*seccion hero*/
+
+.logo-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*background-color: yellow;*/
+}
+
+.logo{
+    height: 150px;
+}
+
+.button-main{
+    /*background-color: salmon;*/
+}
+
+.button-main button{
+background-color: white;
+margin: 5px;
+padding: 18px 35px;
+border-style: none;
+border: solid black 0.2px;
+border-radius: 40px; 
+font-weight: 500;
+font-size: medium;
+}
+
+.button-main button:hover{
+    background-color: grey;
+    color:white;
+    border: grey;
+}
+
+.hero-main{
+    font-family: "Roboto";
+    position: relative;
+    background: url(/img/galpones.jpg) no-repeat center/cover;
+    opacity: 1;
+    height: 500px;
+    /*background-color: salmon;*/
+    margin: 15px 10px;
+    border-radius: 50px;
+}
+
+.h1-hero{
+    color: white;
+    opacity: 1;
+    position: absolute;
+    bottom: 20px;
+    left:20px;
+    width: 320px;
+    text-align: left;
+    text-shadow: grey 0.1px 0.1px 10px;
+    font-weight: 500;
+    font-size: 2.5rem;
+}
+
+.contact-fixed{
+    position: fixed;
+    bottom: 0;
+    background-color: grey;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.contact-fixed img{
+    max-height: 50px;
+}
+
+.contact-fixed img:hover {
+    transform: scale(140%);
+}
+
+/*termina el hero*/
+
+
+
+/*empieza seccion work*/
+
+.work{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.work h2{
+    font-size: 2rem;
+    margin: 20px 0px;
+    text-align: center;
+    color: grey;
+}
+
+
+.img-galpones {
+    /*background-color: red;*/
+    background: url(/img/galpones.jpg) no-repeat center/cover;
+    height: 300px;
+    margin: 15px 10px;
+    border-radius: 50px;
+}
+
+.img-tinglados{
+    /*background-color: red;*/
+    background: url(/img/tinglados.jpg) no-repeat center/cover;
+    height: 300px;
+    margin: 15px 10px;
+    border-radius: 50px;
+}
+
+.work-galpones, .work-tinglados{
+    margin: 20px 0;
+}
+
+.text-galpones, .text-tinglados{
+    /*background-color: grey;*/
+    height: 200px;
+    font-size: 1.2rem;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.text-tinglados{
+    height: 170px;
+}
+
+.work input{
+    display:none;
+}
+
+.label-galpones, .label-tinglados {
+    text-align: center;
+    background-color: white;
+    width: 50%;
+    margin: 5px;
+    padding: 18px 35px;
+    border-style: none;
+    border: solid black 0.2px;
+    border-radius: 40px; 
+    font-weight: 500;
+    font-size: medium; 
+}
+
+.work-galpones {
+    display: none;
+}
+
+.input-galpones:checked ~ .work-galpones {
+    display: block;
+}
+
+.input-galpones:checked ~ .work-tinglados {
+    display: none;
+}
+
+/*.input-tinglados:checked ~ .work-tinglados {
+    display: block;
+}
+
+.input-tinglados:checked ~ .work-galpones {
+    display: none;
+}
+
+/*termina seccion work*/
+
+
+
+/*seccion about us*/
+
+.about-us {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-us h2 {
+    font-size: 2rem;
+    padding: 10px 0px;
+    margin: 20px 0px;
+    text-align: center;
+    color: white;
+    background-color: #313E48;
+}
+
+.img_about-us{
+    /*background-color: red;*/
+    background: url(/img/hombre-subiendo-escalera_rafa.jpg) no-repeat center/cover;
+    height: 300px;
+    margin: 15px 10px;
+    border-radius: 50px;
+}
+
+.text_about-us{
+    /*background-color: grey;*/
+    height: 200px;
+    font-size: 1.2rem;
+    width: 85%;
+    margin: 0 auto;
+}
+
+/*termina about us/*
+
+
+
+/*seccion team*/
+
+.team {
+    display: flex;
+    flex-direction: column;
+}
+
+.team h2 {
+    font-size: 2rem;
+    padding: 10px 0px;
+    margin: 20px 0px;
+    text-align: center;
+    color: white;
+    background-color: #A93339;
+}
+
+.img_team{
+    /*background-color: red;*/
+    background: url(/img/OUR\ TEAM.jpg) no-repeat center/cover;
+    height: 300px;
+    margin: 15px 10px;
+    border-radius: 50px;
+}
+
+.text_team{
+    /*background-color: grey;*/
+    height: 250px;
+    font-size: 1.2rem;
+    width: 85%;
+    margin: 0 auto;
+}
+
+/*termina team/*
+
+
+
+/*formulario de contacto */
+
+.contact-form {
+    /*background-color: red;*/
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.contact-form h3 {
+    font-weight:bold;
+    font-size: 1.8rem;
+    padding: 10px;
+}
+
+.contact-form_left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#input-form {
+    padding: 5px;
+    border: 1px solid #EFEFEF;
+    background-color: #EFEFEF;
+    width: 70%;
+}
+
+.enviar_form {
+    color: white;
+    background-color: #313E48;
+    border: 1px solid #313E48;
+    color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 10px 40px;
+    margin: 10px 0px;
+	letter-spacing: 1px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.enviar_form:active {
+	transform: scale(0.95);
+}
+
+/*termina el formulario/*
+
+
+
+/*empieza el footer*/
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: grey;
+    height: 200px;
+    width: 100%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.footer_rafa{
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    gap: 5px;
+}
+
+.footer_agencia {
+    margin: 10px;
+    display: flex;
+    
+}
